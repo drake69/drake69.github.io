@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Projects — Luigi Corsaro, PhD</title>
-<meta name="description" content="Open-source projects by Luigi Corsaro — genomics/epigenomics R packages, toxicogenomics tools, and privacy-first data products. Research and code in the same commit.">
+<title>Projects · Luigi Corsaro, PhD</title>
+<meta name="description" content="Open-source projects by Luigi Corsaro: genomics and epigenomics R packages, toxicogenomics tools and privacy-first data products. Research and code in the same commit.">
 <style>
   :root{ --navy:#14406b; --ink:#1a1a1a; --muted:#5a6472; --line:#e2e6ec; --accent:#b35900; --bg:#fff; }
   *{box-sizing:border-box}
@@ -16,8 +16,11 @@
   header h1{margin:0 0 6px;font-size:1.9rem}
   header .role{font-size:1.05rem;font-weight:600;opacity:.95}
   header .tag{margin-top:10px;font-size:.95rem;opacity:.9}
-  .back{display:inline-block;margin-top:16px;color:#fff;background:rgba(255,255,255,.14);padding:6px 12px;border-radius:20px;font-size:.88rem;border:1px solid rgba(255,255,255,.25)}
-  .back:hover{background:rgba(255,255,255,.26);text-decoration:none}
+  .pagenav{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:20px}
+  .pagenav a{color:#fff;background:rgba(255,255,255,.14);padding:6px 12px;border-radius:20px;font-size:.88rem;border:1px solid rgba(255,255,255,.25)}
+  .pagenav a:hover{background:rgba(255,255,255,.26);text-decoration:none}
+  .pagenav .cta{margin-left:auto;background:var(--accent);border-color:var(--accent);font-weight:600}
+  .pagenav .cta:hover{background:#c86a12}
   section{padding:34px 0;border-bottom:1px solid var(--line)}
   h2{color:var(--navy);font-size:1.25rem;margin:0 0 4px}
   .sub{color:var(--muted);font-size:.95rem;margin:0 0 18px}
@@ -39,22 +42,27 @@
 
 <header>
   <div class="wrap">
+    <nav class="pagenav">
+      <a href="index.html">Home</a>
+      <a href="papers.html">Publications</a>
+      <!-- Replace href with your O365 "Bookings with me" link when ready -->
+      <a class="cta" href="mailto:lcorsaro69@gmail.com?subject=Intro%20call:%20clinical%20genomics%20pipelines">Book a call</a>
+    </nav>
     <h1>Projects</h1>
-    <div class="role">Luigi Corsaro, PhD — open-source code</div>
-    <div class="tag">Research and code in the same commit: pipelines, tools, data · 35 public repos on GitHub</div>
-    <a class="back" href="index.html">← Back to home</a>
+    <div class="role">Open-source code by Luigi Corsaro, PhD</div>
+    <div class="tag">Research and code in the same commit: pipelines, tools and data across 35 public repositories on GitHub</div>
   </div>
 </header>
 
 <section>
   <div class="wrap">
     <h2>Flagship projects</h2>
-    <p class="sub">The work that best shows the cross-over between clinical genomics research and production-grade engineering.</p>
+    <p class="sub">The work that best demonstrates the crossover between clinical genomics research and production-grade engineering.</p>
 
     <div class="item">
       <h3>SEMseeker</h3>
       <p class="meta">R · AGPL-v3 · DOI 10.5281/zenodo.5095416 · basis of the PhD thesis</p>
-      <p>R package for Epigenome-Wide Association Studies (EWAS) based on stochastic epimutation. It underpins the SEM methodology used in the first-author papers and is the strongest proof of "research + code in the same commit".</p>
+      <p>An R package for Epigenome-Wide Association Studies (EWAS) based on stochastic epimutation. It underpins the SEM methodology used in the first-author papers and is the strongest demonstration of research and code delivered in the same commit.</p>
       <div class="plinks">
         <a href="https://github.com/drake69/SEMseeker">Repository →</a>
         <a href="https://doi.org/10.5281/zenodo.5095416">Zenodo DOI →</a>
@@ -65,7 +73,7 @@
     <div class="item">
       <h3>ctdR</h3>
       <p class="meta">R</p>
-      <p>Enrichment analysis (ORA &amp; GSEA) of chemical–gene interactions from the Comparative Toxicogenomics Database. A toxicogenomics enrichment tool that pairs directly with the Agent Orange / environmental-exposure work.</p>
+      <p>Enrichment analysis (ORA and GSEA) of chemical-gene interactions from the Comparative Toxicogenomics Database. A toxicogenomics enrichment tool that pairs directly with the Agent Orange and environmental-exposure research.</p>
       <div class="plinks">
         <a href="https://github.com/drake69/ctdR">Repository →</a>
       </div>
@@ -75,7 +83,7 @@
     <div class="item">
       <h3>spendif-ai</h3>
       <p class="meta">Python · offline-first, privacy-safe</p>
-      <p>Personal-finance ledger that aggregates bank statements (CSV/XLSX) into a single ledger with hybrid deterministic + LLM categorization. A maker proof-point for privacy-first data products — launching on Product Hunt.</p>
+      <p>A personal-finance ledger that aggregates bank statements (CSV and XLSX) into a single ledger with hybrid deterministic and LLM categorization. A demonstration of privacy-first data products, currently launching on Product Hunt.</p>
       <div class="plinks">
         <a href="https://github.com/drake69/spendif-ai">Repository →</a>
         <a href="https://www.producthunt.com/@drake69">Product Hunt →</a>
@@ -87,13 +95,13 @@
 
 <section>
   <div class="wrap">
-    <h2>Other notable repos</h2>
-    <p class="sub">Home Assistant integrations and tooling — engineering with a scientific model underneath.</p>
+    <h2>Other notable repositories</h2>
+    <p class="sub">Home Assistant integrations and tooling: engineering built on an underlying scientific model.</p>
 
     <div class="item">
       <h3>NeverDry</h3>
       <p class="meta">Python · Home Assistant</p>
-      <p>Smart irrigation for Home Assistant driven by a scientific water-balance model with per-zone crop coefficients.</p>
+      <p>Smart irrigation for Home Assistant, driven by a scientific water-balance model with per-zone crop coefficients.</p>
       <div class="plinks"><a href="https://github.com/drake69/NeverDry">Repository →</a></div>
       <div><span class="badge">Python</span><span class="badge">Home Assistant</span></div>
     </div>
@@ -101,7 +109,7 @@
     <div class="item">
       <h3>neverdry-planner</h3>
       <p class="meta">JavaScript</p>
-      <p>Browser-based irrigation-line planner that computes the optimal emitter mix.</p>
+      <p>A browser-based irrigation-line planner that computes the optimal emitter mix.</p>
       <div class="plinks"><a href="https://github.com/drake69/neverdry-planner">Repository →</a></div>
       <div><span class="badge">JavaScript</span><span class="badge">planner</span></div>
     </div>
@@ -109,19 +117,20 @@
     <div class="item">
       <h3>WhatIfWind</h3>
       <p class="meta">Python · Home Assistant</p>
-      <p>Home Assistant integration that simulates annual wind-energy yield from real anemometer data.</p>
+      <p>A Home Assistant integration that simulates annual wind-energy yield from real anemometer data.</p>
       <div class="plinks"><a href="https://github.com/drake69/WhatIfWind">Repository →</a></div>
       <div><span class="badge">Python</span><span class="badge">Home Assistant</span></div>
     </div>
 
-    <p class="sub" style="margin-top:8px">Full list of public repositories on <a href="https://github.com/drake69">github.com/drake69</a>.</p>
+    <p class="sub" style="margin-top:8px">The full list of public repositories is on <a href="https://github.com/drake69">github.com/drake69</a>.</p>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
     Luigi Corsaro, PhD · Milan, Italy · <a href="mailto:lcorsaro69@gmail.com">lcorsaro69@gmail.com</a><br>
-    <a href="index.html">Home</a> · <a href="papers.html">Publications</a> · <a href="https://github.com/drake69">GitHub</a>
+    <a href="index.html">Home</a> · <a href="projects.html">Projects</a> · <a href="papers.html">Publications</a><br>
+    Reliable AI and data systems for domains where mistakes are expensive.
   </div>
 </footer>
 
