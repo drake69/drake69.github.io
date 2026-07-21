@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Publications · Luigi Corsaro, PhD</title>
 <meta name="description" content="Peer-reviewed publications by Luigi Corsaro, PhD: clinical genomics and epigenomics, EWAS and stochastic epimutation. Each entry links to its DOI.">
 <style>
@@ -32,6 +33,12 @@
   .item .plinks a{display:inline-block;margin:0 12px 0 0;font-size:.88rem}
   .badge{display:inline-block;background:#f4f7fb;color:var(--navy);border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:.78rem;margin:2px 4px 2px 0}
   footer{padding:26px 0;color:var(--muted);font-size:.88rem;text-align:center}
+  @media (prefers-color-scheme: dark){
+    :root{ --navy:#7ab3ef; --ink:#e4e8ee; --muted:#98a3b0; --line:#2a3441; --accent:#e0913f; --bg:#10151d; }
+    .item p{color:#cdd4dc}
+    .item{background:#151c26}
+    .badge{background:#1b2532}
+  }
 </style>
 <script>
   window.vmtrcq = window.vmtrcq || [];
@@ -47,7 +54,7 @@
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
       <!-- Replace href with your O365 "Bookings with me" link when ready -->
-      <a class="cta" href="mailto:lcorsaro69@gmail.com?subject=Intro%20call:%20clinical%20genomics%20pipelines">Book a call</a>
+      <a class="cta" href="mailto:lcorsaro69@gmail.com?subject=Intro%20call:%20clinical%20genomics%20systems">Book a call</a>
     </nav>
     <h1>Publications</h1>
     <div class="role">Peer-reviewed papers by Luigi Corsaro, PhD</div>
@@ -136,7 +143,7 @@
   <div class="wrap">
     Luigi Corsaro, PhD · Milan, Italy · <a href="mailto:lcorsaro69@gmail.com">lcorsaro69@gmail.com</a><br>
     <a href="index.html">Home</a> · <a href="projects.html">Projects</a> · <a href="papers.html">Publications</a><br>
-    Reliable AI and data systems for domains where mistakes are expensive.
+    Reliable computational systems for genomics, where mistakes are expensive.
   </div>
 </footer>
 

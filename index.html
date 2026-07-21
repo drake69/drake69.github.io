@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Luigi Corsaro, PhD · Clinical Genomics &amp; Epigenomics Data Engineer</title>
-<meta name="description" content="Freelance clinical genomics and epigenomics data engineer. Reproducible, validated and audit-ready pipelines, combining a PhD in Genomic Data Science with 30 years of risk-critical systems engineering.">
+<meta name="color-scheme" content="light dark">
+<title>Luigi Corsaro, PhD · Computational Systems for Clinical Genomics &amp; Epigenomics</title>
+<meta name="description" content="I engineer reliable computational systems for clinical genomics and epigenomics — from research code to reproducible, validated and audit-ready production. A PhD in Genomic Data Science combined with 30 years of risk-critical systems engineering.">
 <style>
   :root{ --navy:#14406b; --ink:#1a1a1a; --muted:#5a6472; --line:#e2e6ec; --accent:#b35900; --bg:#fff; }
   *{box-sizing:border-box}
@@ -29,6 +30,7 @@
   .lead{font-size:1.05rem;color:#333}
   .pillars{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:8px}
   .card{border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card.wide{grid-column:1/-1}
   .card h3{margin:0 0 6px;font-size:1rem;color:var(--navy)}
   .card p{margin:0;color:var(--muted);font-size:.92rem}
   .venn{text-align:center;margin:6px 0}
@@ -41,6 +43,19 @@
   .badge{display:inline-block;background:#f4f7fb;color:var(--navy);border:1px solid var(--line);border-radius:6px;padding:2px 8px;font-size:.82rem;margin:2px 4px 2px 0}
   footer{padding:26px 0;color:var(--muted);font-size:.88rem;text-align:center}
   .muted{color:var(--muted)}
+  .close p{color:#333;margin:0 0 12px}
+  .epigraph{margin:0 0 18px;padding:8px 0 8px 16px;border-left:3px solid var(--accent);font-style:italic;font-size:1.08rem;color:#333}
+  .epigraph .cite{display:block;margin-top:6px;font-style:normal;font-size:.82rem;color:var(--muted)}
+  .me .wrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .me img{width:112px;height:112px;border-radius:50%;object-fit:cover;border:1px solid var(--line)}
+  .me .who{font-size:.95rem}
+  .me .who strong{color:var(--navy)}
+  @media (prefers-color-scheme: dark){
+    :root{ --navy:#7ab3ef; --ink:#e4e8ee; --muted:#98a3b0; --line:#2a3441; --accent:#e0913f; --bg:#10151d; }
+    .lead,.close p,.epigraph{color:#cdd4dc}
+    .card{background:#151c26}
+    .badge{background:#1b2532}
+  }
 </style>
 <script>
   window.vmtrcq = window.vmtrcq || [];
@@ -56,11 +71,11 @@
       <a href="projects.html">Projects</a>
       <a href="papers.html">Publications</a>
       <!-- Replace href with your O365 "Bookings with me" link when ready -->
-      <a class="cta" href="mailto:lcorsaro69@gmail.com?subject=Intro%20call:%20clinical%20genomics%20pipelines">Book a call</a>
+      <a class="cta" href="mailto:lcorsaro69@gmail.com?subject=Intro%20call:%20clinical%20genomics%20systems">Book a call</a>
     </nav>
     <h1>Luigi Corsaro, PhD</h1>
-    <div class="role">Freelance Clinical Genomics and Epigenomics Data Engineer</div>
-    <div class="tag">Reproducible, validated and audit-ready pipelines for WGS, NGS, DNA methylation and EWAS · Remote across the EU, US and Switzerland</div>
+    <div class="role">Clinical Genomics &amp; Epigenomics · Computational Systems</div>
+    <div class="tag">From research code to systems that run, hold up under scrutiny, and can be handed over — WGS, NGS, DNA methylation, EWAS · Remote across the EU, US and Switzerland</div>
     <div class="links">
       <a href="mailto:lcorsaro69@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/luigicorsaro">LinkedIn</a>
@@ -73,29 +88,34 @@
 
 <section>
   <div class="wrap">
-    <p class="lead">I build the pipelines that clinical genomics and epigenomics can rely on, taking
-    sequencing and DNA-methylation analysis from research scripts to reproducible, validated and
-    audit-ready production. My work draws on a rare combination of strengths: <strong>30 years of
-    engineering risk-critical, regulated systems</strong>, a <strong>PhD in Genomic Data Science</strong>,
-    and <strong>first-author epigenetics research</strong> supported by public, citable code.</p>
+    <p class="lead">Clinical genomics and epigenomics teams often have analysis that works in
+    research — but isn't reproducible, validated, or ready to be audited and handed over. Closing
+    that gap is what I do: taking sequencing and DNA-methylation work from research code to a
+    computational system that runs in production and holds up under scrutiny. What I bring to it —
+    <strong>30 years engineering risk-critical, regulated systems</strong>, a
+    <strong>PhD in Genomic Data Science</strong>, and <strong>first-author epigenetics research</strong> —
+    works alongside a team of specialists (clinicians, wet-lab scientists, bioinformaticians),
+    turning their combined competencies into a system that actually runs. The system works because
+    the group does.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>The rare intersection</h2>
-    <div class="venn"><img src="venn.png" alt="Venn diagram of risk-critical systems, genomics and epigenomics, and hands-on building"></div>
-    <p class="center-line">The value is not in any single circle; it lies at the centre.</p>
+    <h2>Where I work</h2>
+    <div class="venn"><img src="venn.png" alt="Venn diagram of risk-critical systems engineering, genomics and epigenomics, and hands-on building, overlapping at the centre"></div>
+    <p class="center-line">None of these circles delivers alone — and neither do I. The value is in connecting them, inside a team, into something that runs.</p>
   </div>
 </section>
 
 <section>
   <div class="wrap">
-    <h2>What I do</h2>
+    <h2>How I can help</h2>
     <div class="pillars">
-      <div class="card"><h3>Pipeline audits and validation</h3><p>Review of reproducibility, traceability, quality control and audit-readiness for existing genomics and methylation pipelines.</p></div>
-      <div class="card"><h3>Research to production</h3><p>Conversion of analysis scripts into modular, documented and containerised production pipelines for WGS, NGS and EWAS.</p></div>
-      <div class="card"><h3>Fractional technical lead</h3><p>Senior ownership of genomics engineering: architecture, validation strategy, mentoring and knowledge transfer.</p></div>
+      <div class="card"><h3>Reliability, validation &amp; audit-readiness</h3><p>Reproducibility, traceability, quality control and audit-readiness for genomics and methylation systems.</p></div>
+      <div class="card"><h3>From research code to production systems</h3><p>Turning analysis code into modular, documented and containerised systems for WGS, NGS and EWAS.</p></div>
+      <div class="card"><h3>Fractional technical lead</h3><p>Making a multi-disciplinary team deliver: architecture, validation strategy, mentoring and handover.</p></div>
+      <div class="card wide"><h3>Coaching &amp; knowledge transfer</h3><p>Adjunct lecturer at ITS Angelo Rizzoli for four years — descriptive statistics, statistical models and Python. The same coaching brought to your team: upskilling and handover so the work outlives the engagement.</p></div>
     </div>
   </div>
 </section>
@@ -144,11 +164,49 @@
   </div>
 </section>
 
+<section class="close">
+  <div class="wrap">
+    <h2>Nexialism</h2>
+    <blockquote class="epigraph">&ldquo;Applied whole-ism.&rdquo;
+      <span class="cite">&mdash; A. E. van Vogt, <em>The Voyage of the Space Beagle</em>, Simon &amp; Schuster, 1950, p. 35</span></blockquote>
+    <p>In van Vogt&rsquo;s novel, Elliott Grosvenor is the only Nexialist aboard the <em>Space Beagle</em> &mdash; a
+      department of one, whose specialism is connecting the others. For much of the voyage his reports go
+      unanswered. He earns a hearing not by convincing anyone, but by threatening a board of inquiry; the
+      director agrees to listen only because Grosvenor&rsquo;s presence on the ship obliges him to weigh the
+      opinion at all.</p>
+    <p>The interesting part isn&rsquo;t that he turns out to be right. It&rsquo;s that, before the demonstration, there
+      was no way to tell him apart from someone who speaks loosely about everything. The chemist Kent&rsquo;s
+      skepticism is, a priori, fair.</p>
+    <p>I read my own work in that light. What I add to a team isn&rsquo;t deeper genomics than the bioinformaticians
+      or better bench judgement than the biologists &mdash; it&rsquo;s propagating constraints across those domains
+      until they resolve into one system that runs. I can read the interfaces between fields; I&rsquo;m not the
+      specialist inside any of them. Bench molecular biology and clinical interpretation, for two, are places
+      where I defer to the people who own them. The connective role only proves itself after the fact, on a
+      problem the separate specialisms don&rsquo;t close on their own &mdash; and until then it&rsquo;s fair to be skeptical
+      of it.</p>
+    <p>Van Vogt makes the same point inside the book: the ship&rsquo;s engineer, he notes, needed nexialism less
+      than anyone aboard.</p>
+  </div>
+</section>
+
+<section class="me">
+  <div class="wrap">
+    <img src="luigi.jpg" alt="Luigi Corsaro" width="112" height="112">
+    <div class="who">
+      <strong>Luigi Corsaro, PhD</strong><br>
+      <span class="muted">Milan, Italy · remote across the EU, US and Switzerland</span><br>
+      <a href="mailto:lcorsaro69@gmail.com">lcorsaro69@gmail.com</a> ·
+      <a href="https://www.linkedin.com/in/luigicorsaro">LinkedIn</a> ·
+      <a href="https://github.com/drake69">GitHub</a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     Luigi Corsaro, PhD · Milan, Italy · <a href="mailto:lcorsaro69@gmail.com">lcorsaro69@gmail.com</a><br>
     <a href="index.html">Home</a> · <a href="projects.html">Projects</a> · <a href="papers.html">Publications</a><br>
-    Reliable AI and data systems for domains where mistakes are expensive.
+    Reliable computational systems for genomics, where mistakes are expensive.
   </div>
 </footer>
 
