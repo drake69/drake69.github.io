@@ -107,11 +107,19 @@
   .stat{border-top:2px solid var(--accent);padding-top:8px}
   .stat b{display:block;color:var(--navy);font-size:1.05rem}
   .stat span{color:var(--muted);font-size:.86rem}
+  .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px 16px;margin-top:6px}
+  .skill{border:1px solid var(--line);border-radius:8px;background:#f4f7fb}
+  .skill>summary{cursor:pointer;list-style:none;padding:8px 12px;font-size:.9rem;font-weight:600;color:var(--navy);display:flex;align-items:center;justify-content:space-between}
+  .skill>summary::-webkit-details-marker{display:none}
+  .skill>summary::after{content:"+";color:var(--accent);font-weight:700;margin-left:8px}
+  .skill[open]>summary::after{content:"\2013"}
+  .skill .detail{padding:0 12px 10px;font-size:.86rem;color:var(--muted)}
   @media (prefers-color-scheme: dark){
     :root{ --navy:#7ab3ef; --ink:#e4e8ee; --muted:#98a3b0; --line:#2a3441; --accent:#e0913f; --bg:#10151d; }
     .lead,.close p,.epigraph{color:#cdd4dc}
     .card{background:#151c26}
     .badge{background:#1b2532}
+    .skill{background:#151c26}
   }
 </style>
 <script>
@@ -223,11 +231,6 @@
         (<a href="https://github.com/drake69/spendif-ai">GitHub</a>;
         <a href="https://www.producthunt.com/@drake69">Product Hunt</a>).</li>
     </ul>
-    <div>
-      <span class="badge">WGS</span><span class="badge">NGS</span><span class="badge">DNA methylation</span>
-      <span class="badge">EWAS</span><span class="badge">reproducible pipelines</span>
-      <span class="badge">R</span><span class="badge">Python</span><span class="badge">Docker</span>
-    </div>
   </div>
 </section>
 
@@ -298,6 +301,23 @@
   </div>
 </section>
 
+<section>
+  <div class="wrap">
+    <p class="muted" style="margin:0 0 6px">Skills: click any to see where I&rsquo;ve used it.</p>
+    <div class="skills">
+      <details class="skill" data-skill="EWAS"><summary>EWAS</summary><div class="detail">SEMseeker, my R package for epigenome-wide association studies based on stochastic epimutation (<a href="https://doi.org/10.5281/zenodo.5095416">DOI</a>, <a href="https://github.com/drake69/SEMseeker">source</a>).</div></details>
+      <details class="skill" data-skill="DNA methylation"><summary>DNA methylation</summary><div class="detail">The core of my PhD and first-author research on methylation and epimutation (<a href="papers.html">publications</a>).</div></details>
+      <details class="skill" data-skill="WGS"><summary>WGS</summary><div class="detail">Whole-genome sequencing analysis pipelines in R, Python and Docker.</div></details>
+      <details class="skill" data-skill="NGS"><summary>NGS</summary><div class="detail">Next-generation sequencing workflows, from raw data to reproducible output.</div></details>
+      <details class="skill" data-skill="R"><summary>R</summary><div class="detail">SEMseeker and analysis pipelines; also taught at ITS Angelo Rizzoli.</div></details>
+      <details class="skill" data-skill="Python"><summary>Python</summary><div class="detail">Analysis pipelines and tooling; taught Python at ITS Angelo Rizzoli.</div></details>
+      <details class="skill" data-skill="Docker"><summary>Docker</summary><div class="detail">Containerised, reproducible genomics workflows that run the same everywhere.</div></details>
+      <details class="skill" data-skill="Reproducible pipelines"><summary>Reproducible pipelines</summary><div class="detail">Turning research code into validated, audit-ready systems: reproducibility, quality control and provenance.</div></details>
+      <details class="skill" data-skill="Statistics"><summary>Statistics</summary><div class="detail">Descriptive statistics and statistical models; four years as an adjunct lecturer.</div></details>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="wrap">
     Luigi Corsaro, PhD · Milan, Italy · <a href="mailto:lcorsaro69@gmail.com">lcorsaro69@gmail.com</a><br>
@@ -305,6 +325,20 @@
     Reliable computational systems for genomics, where mistakes are expensive.
   </div>
 </footer>
+
+<script>
+  // Track which specific skill a visitor opens: a hard-exploration signal.
+  // Fires once per skill per page load via the Vemetric queue defined in <head>.
+  document.querySelectorAll("details.skill").forEach(function (d) {
+    var fired = false;
+    d.addEventListener("toggle", function () {
+      if (d.open && !fired) {
+        fired = true;
+        window.vmtrc("trackEvent", "skill_explored", { eventData: { skill: d.dataset.skill, page: "home" } });
+      }
+    });
+  });
+</script>
 
 </body>
 </html>
