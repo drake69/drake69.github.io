@@ -1,0 +1,40 @@
+# Luigi Corsaro, PhD
+
+> Computational systems engineer for clinical genomics and epigenomics. Turns research code (WGS, NGS, DNA methylation, EWAS) into reproducible, validated and audit-ready computational systems. PhD in Genomic Data Science (University of Pavia, 2025) combined with 30 years of risk-critical systems engineering. Works remotely, worldwide.
+
+## About
+
+Luigi Corsaro works at the intersection of genomics and epigenomics, computational systems engineering, and hands-on delivery. His contribution is connective: propagating constraints across clinical, wet-lab, bioinformatics and software-engineering domains until they resolve into one system that runs, is understood, and can be handed over. He does not replace the domain specialists; he owns the interfaces between them.
+
+Languages: Italian (native), English (professional), Chinese (basic).
+
+## Services
+
+- **From research code to production systems** — turning R and Python analysis into modular, documented, containerised workflows for WGS, NGS and EWAS.
+- **Reliability, validation and audit-readiness** — reproducibility, traceability, quality control and provenance for genomics and methylation systems.
+- **Fractional technical lead and handover** — architecture, validation strategy, mentoring and knowledge transfer, so the work outlives the engagement.
+
+## Pages
+
+- [Home](https://drake69.github.io/): positioning, services, engagement model.
+- [Publications](https://drake69.github.io/papers.html): peer-reviewed papers, each linking to its DOI.
+- [Projects](https://drake69.github.io/projects.html): open-source R packages and data products.
+
+## Selected work
+
+- First-author publications on epimutation scores in ER-positive breast cancer (Cancers, 2023) and stochastic epimutations in exposed populations (Environmental Epigenetics, 2024).
+- SEMseeker: an R package for EWAS based on stochastic epimutation (DOI 10.5281/zenodo.5095416).
+- Seven peer-reviewed papers (two as first author) and a PhD thesis (University of Pavia, 2025).
+
+## Profiles
+
+- LinkedIn: https://www.linkedin.com/in/luigicorsaro
+- GitHub: https://github.com/drake69
+- ORCID: https://orcid.org/0000-0003-1218-230X
+- Google Scholar: https://scholar.google.com/citations?user=1UD9_okAAAAJ
+- Scopus: https://www.scopus.com/authid/detail.uri?authorId=57218242357
+- Web of Science: https://www.webofscience.com/wos/author/record/AAE-3252-2021
+
+## Contact
+
+Email: lcorsaro69@gmail.com
