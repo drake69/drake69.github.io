@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Page not found</title>
+<meta name="robots" content="noindex, follow">
+<script>
+// Projects moved to the never-dry organisation on 2026-08-09. GitHub Pages does not
+// redirect after a transfer, so every already-published link to the old URLs would 404.
+// Known pages have real 200 redirect files (NeverDry/*.html, neverdry-planner/index.html);
+// this catch-all covers everything else: sub-paths, assets, links we do not know about.
+(function () {
+  var moved = [
+    ["/neverdry-planner", "https://never-dry.github.io/neverdry-planner"],
+    ["/neverdry",         "https://never-dry.github.io/NeverDry"]
+  ];
+  var path = window.location.pathname;
+  var lower = path.toLowerCase();
+  for (var i = 0; i < moved.length; i++) {
+    var prefix = moved[i][0];
+    if (lower === prefix || lower.indexOf(prefix + "/") === 0) {
+      var rest = path.slice(prefix.length);
+      window.location.replace(moved[i][1] + rest + window.location.search + window.location.hash);
+      return;
+    }
+  }
+})();
+</script>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0; min-height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: #fff; color: #1a1a1a;
+  }
+  main { max-width: 34rem; padding: 2rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 .75rem; }
+  p { margin: 0 0 1rem; }
+  a { color: #1f6aa5; }
+  ul { padding-left: 1.2rem; }
+  li { margin-bottom: .35rem; }
+  .muted { color: #666; font-size: .9rem; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #101418; color: #e8e8e8; }
+    a { color: #6fb3e8; }
+    .muted { color: #9aa4ad; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Page not found</h1>
+  <p>The page you asked for does not exist at this address.</p>
+  <p class="muted">
+    If you were looking for <strong>NeverDry</strong> or the <strong>NeverDry Planner</strong>:
+    they now live under the <code>never-dry</code> organisation, and you should have been
+    redirected automatically.
+  </p>
+  <ul>
+    <li><a href="https://never-dry.github.io/NeverDry/">NeverDry</a></li>
+    <li><a href="https://never-dry.github.io/neverdry-planner/">NeverDry Planner</a></li>
+    <li><a href="https://drake69.github.io/">Luigi Corsaro &mdash; home</a></li>
+  </ul>
+</main>
+</body>
+</html>
