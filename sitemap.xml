@@ -7,12 +7,17 @@
   </url>
   <url>
     <loc>https://drake69.github.io/papers.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://drake69.github.io/projects.html</loc>
-    <lastmod>2026-07-22</lastmod>
+    <lastmod>2026-08-12</lastmod>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://drake69.github.io/news.html</loc>
+    <lastmod>2026-08-12</lastmod>
+    <priority>0.6</priority>
   </url>
 </urlset>

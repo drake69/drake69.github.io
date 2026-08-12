@@ -19,6 +19,7 @@ Languages: Italian (native), English (professional), Chinese (basic).
 - [Home](https://drake69.github.io/): positioning, services, engagement model.
 - [Publications](https://drake69.github.io/papers.html): peer-reviewed papers, each linking to its DOI.
 - [Projects](https://drake69.github.io/projects.html): open-source R packages and data products.
+- [News](https://drake69.github.io/news.html): accepted congress contributions and work in press, plus recently published papers.
 
 ## Selected work
 
