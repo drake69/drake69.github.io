@@ -3,4 +3,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://drake69.github.io/sitemap.xml
+Sitemap: https://luigicorsaro.com/sitemap.xml
