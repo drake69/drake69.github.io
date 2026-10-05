@@ -19,7 +19,7 @@ Languages: Italian (native), English (professional), Chinese (basic).
 - [Home](https://luigicorsaro.com/): positioning, services, engagement model.
 - [Publications](https://luigicorsaro.com/papers.html): peer-reviewed papers, each linking to its DOI.
 - [Projects](https://luigicorsaro.com/projects.html): open-source R packages and data products.
-- [News](https://luigicorsaro.com/news.html): accepted congress contributions and work in press, plus recently published papers.
+- [News](https://luigicorsaro.com/news.html): software releases, congress posters and accepted abstracts, plus recently published papers.
 
 ## Selected work
 
