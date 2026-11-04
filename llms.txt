@@ -1,6 +1,6 @@
 # Luigi Corsaro, PhD
 
-> Computational systems engineer for clinical genomics and epigenomics. Turns research code (WGS, NGS, DNA methylation, EWAS) into reproducible, validated and audit-ready computational systems. PhD in Genomic Data Science (University of Pavia, 2025) combined with 30 years of risk-critical systems engineering. Works remotely, worldwide.
+> Computational systems engineer for genomics and epigenomics research. Makes research code (WGS, NGS, DNA methylation, EWAS) reproducible, tested and documented. PhD in Genomic Data Science (University of Pavia, 2025) combined with 30 years of risk-critical systems engineering. Works remotely, worldwide.
 
 ## About
 
@@ -10,8 +10,8 @@ Languages: Italian (native), English (professional), Chinese (basic).
 
 ## Services
 
-- **From research code to production systems** — turning R and Python analysis into modular, documented, containerised workflows for WGS, NGS and EWAS.
-- **Reliability, validation and audit-readiness** — reproducibility, traceability, quality control and provenance for genomics and methylation systems.
+- **From research code to robust pipelines**: turning R and Python analysis into modular, documented, containerised workflows for WGS, NGS and EWAS.
+- **Reliability and traceability**: reproducibility, quality control and provenance for genomics and methylation research pipelines.
 - **Fractional technical lead and handover** — architecture, validation strategy, mentoring and knowledge transfer, so the work outlives the engagement.
 
 ## Pages
