@@ -4,3 +4,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://luigicorsaro.com/sitemap.xml
+# Project sites under this host publish their own sitemap. Crawlers read
+# robots.txt only at the host root, so each one is declared here.
+Sitemap: https://luigicorsaro.com/ctdR/sitemap.xml
